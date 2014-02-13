@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)buttonPressed:(id)sender {
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:@[@"Test"] applicationActivities:nil];
+    [self presentViewController:activityVC animated:YES completion:^{}];
+    
+}
+
 @end
